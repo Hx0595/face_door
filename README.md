@@ -1,4 +1,7 @@
 
+## 核心代码文件说明
+
+```text
 face_door_system/
 ├── include/
 │   ├── config.h          # 全局配置项（路径、阈值、引脚等常量定义）
