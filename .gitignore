@@ -1,0 +1,27 @@
+# 编译产物
+build/
+*.o
+*.out
+*.so
+*.a
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# 日志/临时文件
+*.log
+*.swp
+.DS_Store
+.idea/
+.vscode/
+*.tmp
+
+# 人脸模型/数据（如果文件过大，建议注释掉这行，后续手动说明）
+# face_data/
+
+# 可执行文件
+face_door
+
+# 本地配置文件（避免覆盖个性化配置）
+config_local.h
+.env
