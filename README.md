@@ -5,6 +5,7 @@
 ### 1. 硬件环境
 - 主控板：树莓派 4B（2GB 内存）
 - 操作系统：Raspberry Pi OS (64-bit)
+- 开发工具：VS Code（Remote-SSH 连接树莓派开发）
 - 显示设备：七寸 HDMI 电容触摸屏（1024×600 分辨率）
 - 外设模块：
   - USB 摄像头
@@ -32,13 +33,9 @@ sudo apt install -y libjpeg-dev libpng-dev libtiff-dev libavcodec-dev \
                    libxvidcore-dev libx264-dev \
                    libatlas-base-dev gfortran
 ```
-3. 开发工具
-IDE：VS Code（Remote-SSH 连接树莓派开发）
-版本控制：Git + GitHub
-构建系统：CMake 3.16+
 
-二、核心代码文件说明
-text
+##二、核心代码文件说明
+```text
 face_door_system/
 ├── face_data/              # 人脸数据目录
 │   ├── user_1/             # 用户1的人脸样本目录
@@ -67,3 +64,4 @@ face_door_system/
 │   └── main.cpp            # 项目入口（初始化、线程启停、资源释放）
 │
 └── CMakeLists.txt          # 编译配置（依赖libgpiod、OpenCV，多文件编译管理）
+```
