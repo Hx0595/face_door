@@ -35,6 +35,7 @@ sudo apt install -y libjpeg-dev libpng-dev libtiff-dev libavcodec-dev \
 ```
 
 ##二、核心代码文件说明
+
 ```text
 face_door_system/
 ├── face_data/              # 人脸数据目录
