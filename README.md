@@ -1,4 +1,3 @@
-
 ## 一、开发环境
 
 ### 1. 硬件环境
@@ -30,12 +29,10 @@ sudo apt install -y libjpeg-dev libpng-dev libtiff-dev libavcodec-dev \
                    libavformat-dev libswscale-dev libv4l-dev \
                    libxvidcore-dev libx264-dev \
                    libatlas-base-dev gfortran
-
-###3. 开发工具
+3. 开发工具
 IDE：VS Code（Remote-SSH 连接树莓派开发）
 版本控制：Git + GitHub
 构建系统：CMake 3.16+
-
 二、核心代码文件说明
 text
 face_door_system/
