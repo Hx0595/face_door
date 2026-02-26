@@ -1,3 +1,4 @@
+
 ## 一、开发环境
 
 ### 1. 硬件环境
@@ -30,14 +31,13 @@ sudo apt install -y libjpeg-dev libpng-dev libtiff-dev libavcodec-dev \
                    libxvidcore-dev libx264-dev \
                    libatlas-base-dev gfortran
 
-### 3. 开发工具
--IDE：VS Code（Remote-SSH 连接树莓派开发）
--版本控制：Git + GitHub
--构建系统：CMake 3.16+
+###3. 开发工具
+IDE：VS Code（Remote-SSH 连接树莓派开发）
+版本控制：Git + GitHub
+构建系统：CMake 3.16+
 
-## 核心代码文件说明
-
-```text
+二、核心代码文件说明
+text
 face_door_system/
 ├── face_data/              # 人脸数据目录
 │   ├── user_1/             # 用户1的人脸样本目录
@@ -51,7 +51,7 @@ face_door_system/
 │   ├── door_core.h         # 门禁核心业务逻辑接口（开门/报警联动声明）
 │   ├── face_collect.h      # 人脸采集工具接口（样本采集函数声明）
 │   ├── face_tool.h         # 人脸处理工具接口（预处理、裁剪等工具函数）
-│   ├── face_train.h         # 人脸模型训练接口（LBPH模型训练/保存声明）
+│   ├── face_train.h        # 人脸模型训练接口（LBPH模型训练/保存声明）
 │   ├── gpio_control.h      # GPIO硬件控制接口（libgpiod）
 │   ├── log_util.h          # 日志工具接口（异步日志声明）
 │   └── safe_queue.h        # 线程安全队列（实现多线程通信）
@@ -65,4 +65,4 @@ face_door_system/
 │   ├── log_util.cpp        # 异步日志实现（日志队列、终端/文件输出）
 │   └── main.cpp            # 项目入口（初始化、线程启停、资源释放）
 │
-└── CMakeLists.txt          # 编译配置（依赖libgpiod、OpenCV，多文件编译管理））
+└── CMakeLists.txt          # 编译配置（依赖libgpiod、OpenCV，多文件编译管理）
