@@ -1,3 +1,39 @@
+## 一、开发环境
+
+### 1. 硬件环境
+- 主控板：树莓派 4B（2GB 内存）
+- 操作系统：Raspberry Pi OS (64-bit)
+- 显示设备：七寸 HDMI 电容触摸屏（1024×600 分辨率）
+- 外设模块：
+  - USB 摄像头
+  - 继电器模块
+  - 有源蜂鸣器模块
+  - 杜邦线若干
+
+### 2. 软件依赖
+```bash
+# 基础开发工具
+sudo apt install -y build-essential cmake git pkg-config
+
+# OpenCV 及扩展库（人脸检测/识别核心）
+sudo apt install -y libopencv-dev libopencv-contrib-dev
+
+# libgpiod（GPIO 控制核心）
+sudo apt install -y libgpiod-dev gpiod
+
+# 图形界面依赖（用于显示屏显示）
+sudo apt install -y libgtk-3-dev libqt5widgets5
+
+# 其他依赖
+sudo apt install -y libjpeg-dev libpng-dev libtiff-dev libavcodec-dev \
+                   libavformat-dev libswscale-dev libv4l-dev \
+                   libxvidcore-dev libx264-dev \
+                   libatlas-base-dev gfortran
+
+### 3. 开发工具
+-IDE：VS Code（Remote-SSH 连接树莓派开发）
+-版本控制：Git + GitHub
+-构建系统：CMake 3.16+
 
 ## 核心代码文件说明
 
